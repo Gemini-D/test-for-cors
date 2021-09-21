@@ -16,5 +16,10 @@
 
 [这里](https://hyperf.wiki/2.2/#/zh-cn/middleware/middleware?id=%e8%b7%a8%e5%9f%9f%e4%b8%ad%e9%97%b4%e4%bb%b6) 提到了两个思路，也都是这种解决方式。
 
+### 前端自行处理
 
+将接口全部躲过代理的方式，转发到目标服务器。
+
+- 开发阶段可以使用 VUE 的 devServer
+- 线上阶段可以使用 Nginx 代理
 
