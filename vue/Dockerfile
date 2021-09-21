@@ -5,7 +5,7 @@ WORKDIR /usr/src/build
 COPY . /usr/src/build
 RUN npm install -g cnpm --registry=https://registry.npm.taobao.org \
     && cnpm install \
-    npm run-script build
+    && npm run-script build
 
 FROM nginx:alpine
 
