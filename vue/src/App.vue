@@ -7,11 +7,18 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import hello from "./api/hello";
 
 export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  async mounted() {
+    const res = await hello.hello();
+    console.log(res);
+
+    await hello.hello404();
   }
 }
 </script>
