@@ -15,10 +15,13 @@ export default {
     HelloWorld
   },
   async mounted() {
-    const res = await hello.hello();
-    console.log(res);
+    // const res = await hello.hello();
+    // console.log(res);
+    // await hello.hello404();
 
-    await hello.hello404();
+    const res = await hello.hi200();
+    console.log(res);
+    await hello.hi404();
   }
 }
 </script>
